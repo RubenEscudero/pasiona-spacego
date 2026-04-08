@@ -477,7 +477,7 @@ public interface IWallet
 }
 
 
-/// <summary>
+/* /// <summary>
 /// Represents a slot machine for a specific player.
 /// </summary>
 public class Slot
@@ -492,11 +492,11 @@ public class Slot
     /// </summary>
     public required int[] LastStop { get; set; }
 
-    ///public <Symbol[][], Prize[]> Spin(int bet)
-    ///{
-        ///throw new NotImplementedException();
-    ///}
-}
+    public <Symbol[][], Prize[]> Spin(int bet)
+    {
+        throw new NotImplementedException();
+    }
+} */
 
 
 /// <summary>
