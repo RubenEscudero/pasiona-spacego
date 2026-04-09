@@ -476,29 +476,6 @@ public interface IWallet
     public Task<long> Debit(string playerId, long amount);
 }
 
-
-/* /// <summary>
-/// Represents a slot machine for a specific player.
-/// </summary>
-public class Slot
-{
-    /// <summary>
-    /// The unique identifier of the player associated with this slot.
-    /// </summary>
-    public required string PlayerId { get; init; }
-
-    /// <summary>
-    /// Stores the last stop index for each reel.
-    /// </summary>
-    public required int[] LastStop { get; set; }
-
-    public <Symbol[][], Prize[]> Spin(int bet)
-    {
-        throw new NotImplementedException();
-    }
-} */
-
-
 /// <summary>
 /// Represents a payout result for a specific line, including
 /// symbol count and payout amount.

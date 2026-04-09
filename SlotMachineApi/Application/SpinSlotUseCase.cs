@@ -5,6 +5,12 @@ public class SpinSlotUseCase
     private readonly IWallet _wallet;
     private readonly ISlotStore _slotStore;
 
+    public SpinSlotUseCase(IWallet wallet, ISlotStore slotStore)
+    {
+        _wallet = wallet;
+        _slotStore = slotStore;
+    }
+
     public async Task<SpinResult> Execute(string playerId, int bet)
     {
         // Check balance
