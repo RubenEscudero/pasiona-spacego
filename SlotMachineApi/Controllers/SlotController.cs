@@ -31,7 +31,12 @@ public class SlotController : ControllerBase
             Symbols: result.Symbols
                 .Select(row => row.Select(x => x.ToString()).ToArray())
                 .ToArray(),
-            Prizes: result.Prizes,
+            Prizes: result.Prizes
+                .Select(p => new PrizeDTO(
+                    line: p.Line.Id,
+                    n: p.N,
+                    payout: p.Payout
+                )).ToArray(),
             TotalPayout: result.TotalPayout
         );
 

@@ -2,6 +2,6 @@ namespace SlotMachineApi.Models;
 
 public record SpinResponse(
     string[][] Symbols,
-    Prize[] Prizes,
+    PrizeDTO[] Prizes,
     int TotalPayout
 );
