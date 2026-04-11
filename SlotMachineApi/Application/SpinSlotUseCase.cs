@@ -1,3 +1,5 @@
+namespace SlotMachineApi.Application;
+
 using SlotMachineApi.Models;
 
 public class SpinSlotUseCase

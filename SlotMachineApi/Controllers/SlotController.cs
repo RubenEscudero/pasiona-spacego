@@ -1,14 +1,15 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using SlotMachineApi.Models;
+using SlotMachineApi.Application;
 
 [ApiController]
 [Route("api/slot")]
-public class SLotController : ControllerBase
+public class SlotController : ControllerBase
 {
     private readonly SpinSlotUseCase _spinUseCase;
 
-    public SLotController(SpinSlotUseCase spinUseCase)
+    public SlotController(SpinSlotUseCase spinUseCase)
     {
         _spinUseCase = spinUseCase;
     }

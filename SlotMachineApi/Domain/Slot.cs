@@ -1,3 +1,5 @@
+namespace SlotMachineApi.Domain;
+
 /// <summary>
 /// Represents a slot machine for a specific player.
 /// </summary>

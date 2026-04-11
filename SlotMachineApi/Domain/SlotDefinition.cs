@@ -1,3 +1,5 @@
+using SlotMachineApi.Domain;
+
 /// <summary>
 /// Represents a fixed position on the slot machine grid,
 /// defined by reel index and row index.

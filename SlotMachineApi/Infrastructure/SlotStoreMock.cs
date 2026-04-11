@@ -1,3 +1,5 @@
+using SlotMachineApi.Domain;
+
 public class SlotStoreMock : ISlotStore
 {
     private Slot _slot = new Slot
